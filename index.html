@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>TimeCapsule - Messages From Today to Tomorrow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<div class="logo">⏳ TimeCapsule</div>
+<div class="nav-links">
+<a href="#home">Home</a>
+<a href="#create">Create</a>
+<a href="#capsules">My Capsules</a>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<div class="hero-icon">⏳</div>
+<h1>Send a Message<br><span>Through Time</span></h1>
+<p>Write something today. Open it tomorrow. Preserve your memories, dreams and promises for the future.</p>
+<a href="#create" class="hero-btn">Create Your Capsule ✨</a>
+</div>
+<div class="hero-card">
+<div class="card-top">YOUR MESSAGE TO THE FUTURE</div>
+<div class="letter">
+<div class="small-line"></div>
+<h3>Dear Future Me,</h3>
+<p>Remember how far you've come. Keep dreaming, keep growing and never give up.</p>
+<div class="signature">— From the past 💫</div>
+</div>
+<div class="locked">🔒 Opens in the future</div>
+</div>
+</section>
+
+<section class="create-section" id="create">
+<div class="section-heading">
+<p class="tag">CREATE A MEMORY</p>
+<h2>Seal Your Message in Time</h2>
+<p>Choose a date in the future and let your words wait for you.</p>
+</div>
+
+<div class="form-card">
+<form id="capsuleForm">
+<div class="form-group">
+<label>Capsule Title</label>
+<input type="text" id="title" placeholder="e.g. Letter to My Future Self" required>
+</div>
+
+<div class="form-group">
+<label>Recipient</label>
+<input type="text" id="recipient" placeholder="e.g. Future Me" required>
+</div>
+
+<div class="form-group">
+<label>Your Message</label>
+<textarea id="message" rows="7" placeholder="Write something meaningful..." required></textarea>
+</div>
+
+<div class="form-group">
+<label>Open Date & Time</label>
+<input type="datetime-local" id="open_date" required>
+</div>
+
+<div class="date-info">
+🔒 Your capsule will remain sealed until the selected date.
+</div>
+
+<button type="submit" class="submit-btn">🔐 Seal My Time Capsule</button>
+</form>
+</div>
+</section>
+
+<section class="capsules-section" id="capsules">
+<div class="section-heading">
+<p class="tag">YOUR MEMORIES</p>
+<h2>Time Capsules</h2>
+<p>Messages you've sent into the future.</p>
+</div>
+
+<div id="capsuleContainer" class="capsule-container">
+<p class="loading">Loading your capsules...</p>
+</div>
+</section>
+
+<footer>
+<h3>⏳ TimeCapsule</h3>
+<p>Today becomes a memory. Tomorrow becomes a story.</p>
+<p>© 2026 TimeCapsule</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
